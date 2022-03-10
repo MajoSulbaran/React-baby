@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/image/logo.svg';
+import './assets/css/App.css';
 
+
+// importar componente
+
+import MiComponente from './components/MiComponente';
+
+function MiPrimerProyecto(nombre, edad){
+  var presentacion = (
+  
+ <div>
+      <h2>Hola, soy {nombre} </h2>
+      <h3>Tengo {edad} años </h3>
+ </div>
+ 
+ );
+
+
+  return presentacion;
+}
 function App() {
+  var nombre =  "Maria Jose Sulbaran";
+
+  
+
+ 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+            Hola bievenido a mi primer proyecto.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {MiPrimerProyecto(nombre,31)}                
+        <section className="componentes">
+        
+        <MiComponente/>
+        <MiComponente/>
+        <MiComponente/>
+        <MiComponente/>
+
+        
+        </section>
+    
       </header>
+
+          
     </div>
   );
 }
