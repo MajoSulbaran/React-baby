@@ -12,7 +12,7 @@ class MiComponente extends Component{
             </div>
             );
     }
-
+////hola
 }
 
 export default MiComponente;
